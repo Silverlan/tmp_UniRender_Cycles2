@@ -109,3 +109,9 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit: ${{ github.ref_name }}
+
+      - name: Debug Print All Files
+        shell: bash
+        if: failure()
+        run: |
+          ls -R
