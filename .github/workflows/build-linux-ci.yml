@@ -63,5 +63,5 @@ jobs:
         uses: Silverlan/common_actions/release_nightly_binaries@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit: 6170e50
+          commit: "6170e50"
           tag: "6170e50"
