@@ -64,3 +64,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit: 6170e50
+          tag: "6170e50"
