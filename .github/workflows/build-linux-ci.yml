@@ -64,3 +64,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit: 7202f6d
+          tag: "7202f6d"
