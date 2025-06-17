@@ -64,3 +64,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit: 4db43ee
+          tag: "4db43ee"
