@@ -64,3 +64,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit: 3f0b422
+          tag: "3f0b422"
