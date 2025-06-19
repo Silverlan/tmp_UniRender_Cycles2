@@ -1,7 +1,7 @@
 name: Build Linux
 on:
   push:
-    branches: [ 3a4aece ]
+    branches: [ d00d681 ]
   pull_request:
     branches: [ main ]
   workflow_dispatch:
@@ -43,7 +43,7 @@ jobs:
         id: build-deps
         with:
           # This will build the core dependencies, as well as cycles, but not Pragma
-          build-args: "--with-essential-client-modules=0 --with-common-modules=0 --with-lua-debugger=0 --module pr_unirender:\"https://github.com/Silverlan/tmp_pr_cycles.git\" --build 0 --build-cycles --cycles-sha 3a4aece"
+          build-args: "--with-essential-client-modules=0 --with-common-modules=0 --with-lua-debugger=0 --module pr_unirender:\"https://github.com/Silverlan/tmp_pr_cycles.git\" --build 0 --build-cycles --cycles-sha d00d681"
 
       - name: Build UniRender_cycles
         shell: bash
@@ -63,5 +63,5 @@ jobs:
         uses: Silverlan/common_actions/release_nightly_binaries@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit: "3a4aece"
-          tag: "3a4aece"
+          commit: "d00d681"
+          tag: "d00d681"
